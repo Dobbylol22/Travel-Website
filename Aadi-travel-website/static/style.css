@@ -1,7 +1,7 @@
 body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(201, 233, 244);
+    background-color: rgb(53, 54, 54);
 }
 
 
@@ -111,7 +111,7 @@ body{
 
 /*hotel booking css */
 
-#hotel{
+#dest{
     background-image: url("https://images.alphacoders.com/118/118473.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -120,13 +120,14 @@ body{
     height: 1000px;
     margin:-40px auto;
     padding: 0px;
+    background-attachment: fixed;
 
 }
 
-.hotels h1{
+.destination h1{
     position: relative;
     top: 25%;
-    left: 30%;    
+    left: 35%;    
     color:#fff;
     font-weight: 300;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -139,7 +140,7 @@ body{
     max-width: 360px;
     height: 60px;
     border-radius: 120px;
-    margin: 0 auto;
+    margin: 0 750px;
     top: 25%;
   }
   .search-icon, .go-icon {
@@ -271,7 +272,7 @@ body{
 .wrapper .carousel {
   top: 60%;
   max-width: 1000px;
-  margin: 300px 200px;
+  margin: 300px 350px;
   padding: 0 30px;
 }
 
@@ -292,22 +293,22 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
 }
 .carousel .card-1{
-  background-image: url('../assests/chennai.jpg');
+  background-image: url('chennai.jpg');
 }
 
 .carousel .card-2{
-  background-image: url('../assests/hyderbad.jpg');
+  background-image: url('hyderbad.jpg');
 }
 
 .carousel .card-3 {
-  background-image: url('../assests/vijayawada.jpg');
+  background-image: url('vijayawada.jpg');
 }
 .carousel .card-4{
-  background-image: url('../assests/chennai.jpg');
+  background-image: url('chennai.jpg');
 }
 
 .carousel .card-5{
-  background-image: url('../assests/hyderbad.jpg');
+  background-image: url('hyderbad.jpg');
 }
 .owl-dots{
   text-align: center;
@@ -326,7 +327,92 @@ body{
 
 .owl-dot:hover,
 .owl-dot.active{
-  background: #0072bc!important;
+  background: #b48952!important;
 }
+
+
+/* Footer styling */ 
+
+canvas {
+  height: 100vh;
+  z-index: -10;
+  position: fixed;
+  top: 0px;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Varela Round', sans-serif;
+  height: 100%;
+}
+
+
+
+h1 {
+  color: #fc3565;
+  padding-bottom: 0px;
+  margin-bottom: 1%;
+}
+
+h2 {
+  color: #555560;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0px;
+  padding: 0px;
+}
+
+.logo {
+  font-family: 'Monoton', cursive;
+  color: white;
+  font-size: 8rem;
+  top: 40px;
+}
+
+.top {
+  padding-bottom: 5rem;
+}
+
+
+
+span.new {
+    background-color: #fc3565;
+    font-weight: 700;
+    padding: .2rem;
+    margin-left: .4rem;
+    color: #fff;
+}
+
+
+
+
+/* Mobile first queries */
+
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 
 
