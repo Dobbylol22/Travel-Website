@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Travel Website</title>
+        <link href="../assests/style.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500" rel="stylesheet" />
+        <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+        <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap%22rel=%22stylesheet" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+
+    </head>
+    <body>
+        <nav class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#hotel">Hotel/Resorts</a>
+            <a href="#flights">Flights</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className==="topnav"){
+                    x.className += " responsive";
+                }
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+
+        <!-- About-->
+        <section class="about-travel-website" id="about">
+            <div class="content">
+               <h1> Welcome to Travel Website </h1>
+               <p><q>Once a year, go someplace you've never been before. Travel not to find yourself, but to remember who you've been all along.</q></p>
+            </div> 
+        </section>
+       
+        <!-- Book Hotel-->
+        <section class="hotels" id="hotel">
+            <h1>Book your Hotel/Resort</h1>
+            <div class="search-box">
+                <div class="search-icon">
+                    <i class="fa fa-search search-icon"></i>
+                </div>
+            <form action="" class="seach-form"> <!-- please fill the action-->
+                <input type="text" placeholder="search" id="search" autocomplete="off">
+                </form>
+                <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
+                xml:space="preserve">
+             <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280"/>
+             <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280"/>
+             </svg>
+             <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
+            </div>
+             <!--owl carousel-->
+    <div class="loca" id="locations">
+     <div class="wrapper">
+       <div class="carousel owl-carousel">
+       <div class="card card-1"><k>Chennai</k></div>
+       <div class="card card-2"><k>Vijayawada</k></div>
+       <div class="card card-3"><k>Hyderbad</k></div>
+       <div class="card card-4"><k>Banglore</k></div>
+       <div class="card card-5"><k>Kerala</k></div>
+     </div>
+        </section>
+        <script>
+            $(document).ready(function(){
+    $("#search").focus(function() {
+      $(".search-box").addClass("border-searching");
+      $(".search-icon").addClass("si-rotate");
+    });
+    $("#search").blur(function() {
+      $(".search-box").removeClass("border-searching");
+      $(".search-icon").removeClass("si-rotate");
+    });
+    $("#search").keyup(function() {
+        if($(this).val().length > 0) {
+          $(".go-icon").addClass("go-in");
+        }
+        else {
+          $(".go-icon").removeClass("go-in");
+        }
+    });
+    $(".go-icon").click(function(){
+      $(".search-form").submit();
+    });
+});
+        </script>
+
+    </div>
+
+   
+       <script>
+         $(".carousel").owlCarousel({
+           margin: 10,
+           loop: true,
+           autoplayTimeout: 2000,
+           autoplayHoverpause: true,
+           responsive: {
+             0:{
+               items: 1,
+               nav: false
+             },
+             600:{
+               items: 2,
+               nav: false
+             },
+             1000:{
+               items: 3,
+               nav: false
+             }
+           }
+     
+         });
+         </script>
+         </div>
+        
+    </body>
+</html>
