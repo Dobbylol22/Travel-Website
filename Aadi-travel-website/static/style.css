@@ -22,6 +22,10 @@ body{
     font-size: 25px;
 }
 
+#register{
+  text-align: right;
+}
+
 .topnav a:hover {
     background-color: #e6c84f;
     color: rgb(155, 95, 6);
@@ -104,6 +108,7 @@ body{
     opacity: .7;
     border: 20px solid black;
     border-radius: 25px;
+    overflow: hidden;
 
 }
 
@@ -121,6 +126,7 @@ body{
     margin:-40px auto;
     padding: 0px;
     background-attachment: fixed;
+    overflow: hidden;
 
 }
 
@@ -140,7 +146,7 @@ body{
     max-width: 360px;
     height: 60px;
     border-radius: 120px;
-    margin: 0 750px;
+    margin: 0 auto;
     top: 25%;
   }
   .search-icon, .go-icon {
@@ -150,6 +156,7 @@ body{
     width: 86px;
     line-height: 61px;
     text-align: center;
+    color: #fff;
   }
   .search-icon {
     left: 0;
@@ -261,6 +268,10 @@ body{
     text-decoration: none;
   }
 
+  .warning{
+    position: relative;
+  }
+
 
 /* Owl carousel*/
 
@@ -272,7 +283,7 @@ body{
 .wrapper .carousel {
   top: 60%;
   max-width: 1000px;
-  margin: 300px 350px;
+  margin: 300px auto;
   padding: 0 30px;
 }
 

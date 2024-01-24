@@ -26,6 +26,8 @@
             <a href="#about">About</a>
             <a href="#dest">Hotel/Resorts</a>
             <a href="#contact">Contact Us</a>
+            <a href="{{url_for('register')}}" id="register">Register</a>
+            <a href="{{url_for('login')}}" id="login">Login</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
             </a>
@@ -57,8 +59,8 @@
                 <div class="search-icon">
                     <i class="fa fa-search search-icon"></i>
                 </div>
-            <form action="" class="seach-form"> <!-- please fill the action-->
-                <input type="text" placeholder="search" id="search" autocomplete="off">
+            <form action="{{ url_for('results')}}" method="POST" class="seach-form" enctype="multipart/form-data"> <!-- please fill the action-->
+                <input type="text" placeholder="search" id="search" autocomplete="off" name="locationname">
                 </form>
                 <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;"
                 xml:space="preserve">
@@ -67,6 +69,12 @@
              </svg>
              <div class="go-icon"><i class="fa fa-arrow-right"></i></div>
             </div>
+            {% if warning_message %}
+                  <div class="warning" style="color: white;">{{ warning_message }}</div>
+                {% endif %}
+
+
+
              <!--owl carousel-->
     <div class="loca" id="locations">
      <div class="wrapper">
