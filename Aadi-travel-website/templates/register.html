@@ -11,7 +11,7 @@
   <div class="container">
     <div class="title">Registration</div>
     <div class="content">
-      <form action="{{url_for('login')}}" method="POST" autocomplete="off">
+      <form action="{{url_for('register')}}" method="POST" autocomplete="off">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
@@ -19,19 +19,19 @@
           </div>
           <div class="input-box">
             <span class="details">Username</span>
-            <input type="text" placeholder="Enter your username" required>
+            <input type="text" name="username" placeholder="Enter your username" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your email" name="email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" name="phnum" required>
           </div>
           <div class="input-box">
             <span class="details">Password</span>
-            <input type="text" placeholder="Enter your password" required>
+            <input type="text" name='password' placeholder="Enter your password" required>
           </div>
           <div class="input-box">
             <span class="details">Confirm Password</span>
@@ -46,15 +46,15 @@
           <div class="category">
             <label for="dot-1">
             <span class="dot one"></span>
-            <span class="gender">Male</span>
+            <span class="gender" name="male">Male</span>
           </label>
           <label for="dot-2">
             <span class="dot two"></span>
-            <span class="gender">Female</span>
+            <span class="gender" name="Female">Female</span>
           </label>
           <label for="dot-3">
             <span class="dot three"></span>
-            <span class="gender">Prefer not to say</span>
+            <span class="gender" name="pnts">Prefer not to say</span>
             </label>
           </div>
         </div>
