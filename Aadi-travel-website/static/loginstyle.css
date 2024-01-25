@@ -90,7 +90,7 @@
   text-decoration: underline;
 }
 .field input[type="submit"]{
-  background: #3498db;
+  background: #7b572b;
   border: 1px solid #2691d9;
   color: white;
   font-size: 18px;
@@ -100,7 +100,7 @@
   font-family: 'Montserrat',sans-serif;
 }
 .field input[type="submit"]:hover{
-  background: #2691d9;
+  background: #e6a1409e;
 }
 .login{
   color: rgb(17, 14, 14);
@@ -150,7 +150,7 @@ i span{
   font-family: 'Poppins',sans-serif;
 }
 .signup a{
-  color: #3498db;
+  color: #f3d61c;
   text-decoration: none;
 }
 .signup a:hover{
