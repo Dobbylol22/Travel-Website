@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Created By CodingNepal -->
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
@@ -22,14 +21,14 @@
                   <span class="show">SHOW</span>
                </div>
                <div class="pass">
-                  <a href="#">Forgot Password?</a>
+                  <a href="#">Forgot Password?</a> <!--Should create a page where it will ask for phone number or email id and check-->
                </div>
                <div class="field">
                   <input type="submit" value="LOGIN">
                </div>
             </form>
             <div class="login">
-               Or login with
+               <strong> login with</strong>
             </div>
             <div class="links">
                <div class="facebook">
@@ -40,8 +39,8 @@
                </div>
             </div>
             <div class="signup">
-               Don't have account?
-               <a href="#">Signup Now</a>
+              <strong> Don't have account?</strong>
+               <a href="{{url_for('register')}}"><strong>Signup Now</strong></a>
             </div>
          </div>
       </div>
