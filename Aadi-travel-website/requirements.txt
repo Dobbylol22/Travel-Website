@@ -1,0 +1,10 @@
+click==8.1.7
+colorama==0.4.6
+Flask
+Jinja2
+joblib
+keras
+nltk
+numpy
+
+

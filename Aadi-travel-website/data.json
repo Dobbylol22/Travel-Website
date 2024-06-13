@@ -1,0 +1,68 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can suggest you best places to visit during respective seasons, Guide you with travelling precautions and safety, Recommed beautiful waterfalls and temples."],
+         "context": [""]
+        },
+        {"tag": "summer_travel",
+         "patterns": ["which place is best for summer?", "travelling in summer", "summer vacation travel plans", "which place is better for a summer vacation?" ],
+         "responses": ["Summer means happy times and good sunshine. The best places to visit during Summer season: Ooty, Kodaikanal, Lonavala, Munnar, Lambasingi"],
+         "context": [""]
+        },
+        {"tag": "monsoon_travel",
+         "patterns": ["places to visit in rainy season", "which place is best for rainy season", "travelling in rainy", "suggest a good place to travel in rainy season"],
+         "responses": ["Life's not about waiting for thr storm to pass. It's about learning to dance in the rain. The best places to visit during Monsoon season: Waynad, Darjeeling, Shillong, Mount Abu, Andaman And Nicobar, Spiti Valley, Coorg"],
+         "context": [""]
+        },
+        {"tag": "winter_travel",
+         "patterns": ["which place is best place to visit in winter", "travelling in winter", "suggest a good place to visit in winter", "places to travel in winter" ],
+         "responses": ["Winter knits her forest with frost. As the wind chimes of dreams once lost. The best places to visit during Winter season: Varanasi, Auli, Kashmir, Hampi, Nainitial, Aurangabad, Mussoorie, Himachal Pradesh, Gangtok"],
+         "context": [""]
+        },
+        {"tag": "famous_temples",
+         "patterns": ["temples, famous for architecture ","famous temples in india","what are the famous temples in india?","suggest some good temples in india"],
+         "responses": ["A temple visit is more than just a physical experience; it is a soleful journey that rejuvernates our spirit. There are few very famour temples: Shree Somanath Jyothirling temple located in Gujarat, Rameshwaram temple located in Tamil Nadu, Shree Padbhanabhaswamy temple located in Kerala, Ranganathaswamy temple located in Tiruchirapalli Tamil Nadu, Bhadrachalam located in Telangana, Dwaraka located in Gujarat"],
+         "context": [""]
+        },
+        {"tag": "tourist_places",
+         "patterns": ["what are the tourist attractions in india?", "indian toruist attractions", "best places to visit in india" ],
+         "responses": ["To other countries, I may go as a tourist, but to India, I come as a pilgrim ~MARTIN LUTHER KING. JR. Beautiful places to visit in India: Taj Mahal, Gate Way of India, Amber Palace, Hawa Mahal, Mysore Palace, Red Fort, Ajanta Caves"],
+         "context": [""]
+        },
+        {"tag": "waterfalls",
+         "patterns": ["beautiful waterfalls in india","waterfalls"],
+         "responses": ["Go with the flow. Force nothing. Let it happen- trusting that whichever way it goes. It's for the best. Amazing Waterfalls to visit: Dudhsagarfalls, Hebbefalls, Athirapallyfalls, Jogfalls, Talakonafalls, Kunchikalfalls, Shivanasamudrafalls"],
+         "context": [""]
+        },
+        {"tag": "travel_precautions",
+         "patterns": ["what should i carry while travelling?", "precautions while travelling", "what to take with me in travel?" ],
+         "responses": ["Better a thousand times careful than once dead. Please make sure you carry these things along with you: Necessary Medicines, Atleast a pair of extra clothes, Sunscreen, Add important phone numbers to your emergency list, Reusable waterbottle, Sunglasses, Cash"],
+         "context": [""]
+        },
+        {"tag": "travel_safety",
+         "patterns": ["how to take care of myself while travelling?","suggest some travel safety","give me some safety precautions to travel","suggestions for safety travelling"],
+         "responses": ["Precaution is better than cure. Important things you need to keep in mind: Stay hydrated, Be consious about your surrondings and belongings, Be aware of emergency services, Use the right thingsStay in crowded places."],
+         "context": [""]
+        }
+   ]
+}
