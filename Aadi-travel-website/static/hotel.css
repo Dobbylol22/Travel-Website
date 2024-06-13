@@ -1,0 +1,320 @@
+body {
+    background-image: url("https://images.alphacoders.com/118/118473.jpg");  font-family: Helvetica, sans-serif;
+    background-size: cover;
+    background-position: center;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #f4d99640;
+    height: 58px;
+    opacity: 0.7;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #070707;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#register{
+  text-align: right;
+}
+
+.topnav a:hover {
+    background-color: #e6c84f;
+    color: rgb(155, 95, 6);
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+    opacity: 0.40;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* end of the navigation bar */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1);
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    background-color: #07070788;
+}
+.content{
+    display: flex;
+    text-align: justify;
+}
+.left-box, .right-box{
+	flex: 1;
+    padding: 0 10px;
+}
+.left-box{
+    border-right: 1px solid #0000005b;
+}
+.right-box{
+    border-left: 1px solid #0000005b;
+    color: white;
+}
+.content t{
+    font-size: 30px;
+}
+.rooms{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.date-picker {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="date"] {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+
+#days-stay {
+    justify-content: left;
+    font-size: 25px;
+}
+
+/* Footer styling */ 
+
+canvas {
+    height: 100vh;
+    z-index: -10;
+    position: fixed;
+    top: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Varela Round', sans-serif;
+    height: 100%;
+  }
+  
+  
+  
+#contact h1 {
+    color: #fc3565;
+    padding-bottom: 0px;
+    margin-bottom: 1%;
+  }
+  
+#contact h2 {
+    color: #555560;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  
+.top {
+    padding-bottom: 5rem;
+  }
+  
+   
+  span.new {
+      background-color: #fc3565;
+      font-weight: 700;
+      padding: .2rem;
+      margin-left: .4rem;
+      color: #fff;
+  }
+  
+  
+  
+  
+  /* Mobile first queries */
+  
+  
+  /* Larger than mobile */
+  
+  @media (min-width: 400px) {}
+  
+  
+  /* Larger than phablet */
+  
+  @media (min-width: 550px) {}
+  
+  
+  /* Larger than tablet */
+  
+  @media (min-width: 750px) {}
+  
+  
+  /* Larger than desktop */
+  
+  @media (min-width: 1000px) {}
+  
+  
+  /* Larger than Desktop HD */
+  
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+t{
+    font-size: 25px;
+}
+ .rooms{
+    color: yellow;
+ }
+
+  
+  /* CSS */
+
+  #button{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .button-78 {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01,sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-78 {
+      padding: 19px 32px;
+    }
+  }
+  
+  .button-78:before,
+  .button-78:after {
+    border-radius: 80px;
+  }
+  
+  .button-78:before {
+    background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .button-78:after {
+    background-color: initial;
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+  }
+  
+  .button-78:hover:not(:disabled):before {
+    background: linear-gradient(92.83deg, rgb(255, 116, 38) 0%, rgb(249, 58, 19) 100%);
+  }
+  
+  .button-78:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  
+  .button-78:active:not(:disabled) {
+    color: #ccc;
+  }
+  
+  .button-78:active:not(:disabled):before {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  }
+  
+  .button-78:active:not(:disabled):after {
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+  }
+  
+  .button-78:disabled {
+    cursor: default;
+    opacity: .24;
+  }
